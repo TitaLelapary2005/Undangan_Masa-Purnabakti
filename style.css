@@ -1,0 +1,252 @@
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    /* Background body agar tidak terlalu polos putih */
+    background-color: #f0f0f0; 
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header/Hero Section */
+.hero {
+    /* MENGGUNAKAN FOTO TEMA EDUKASI (Pastikan nama file di folder Anda benar) */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('image_232f5e.jpg'); 
+    background-size: cover;
+    background-position: center top; 
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+}
+
+.hero h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.8em;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+.hero h2 {
+    font-weight: 300;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+/* BAGIAN FOTO PROFIL KEPALA SEKOLAH */
+.profile-section {
+    background-color: #ffffff; 
+    text-align: center;
+    padding-top: 0;
+    margin-top: -60px; /* Diangkat ke atas menutupi Hero */
+    z-index: 10;
+    position: relative;
+}
+
+.profile-card {
+    display: inline-block;
+    padding: 30px 40px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+    border: 3px solid #ffc107; /* Border Emas */
+    /* LEBAR DIPERBESAR AGAR MUAT NAMA DAN GELAR PANJANG */
+    max-width: 500px; 
+}
+
+.profile-photo {
+    /* UKURAN FOTO KEPALA SEKOLAH */
+    width: 100px !important; 
+    height: 100px !important; 
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 5px solid #e9ecef;
+}
+
+.profile-card h3 {
+    color: #003049;
+    /* UKURAN FONT DISESUAIKAN UNTUK NAMA PANJANG */
+    font-size: 1.4em; 
+    margin-bottom: 5px;
+}
+
+.profile-card p {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 0;
+}
+/* Akhir BAGIAN PROFIL */
+
+
+/* Detail Acara Section */
+.details {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.details h2 {
+    color: #003049; 
+    margin-bottom: 40px;
+    font-family: 'Merriweather', serif;
+}
+
+.detail-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.detail-box {
+    width: 250px;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+}
+
+.detail-box .label {
+    font-weight: 700;
+    color: #555;
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+.detail-box .value {
+    font-size: 1.3em;
+    color: #003049;
+    font-weight: 600;
+}
+
+/* Pesan/Quote Section */
+.message {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-top: 1px solid #eee;
+}
+
+.quote {
+    font-style: italic;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    font-size: 1.1em;
+    color: #495057;
+    border-left: 5px solid #ffc107;
+    padding-left: 15px;
+}
+
+.invitation-close {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.host {
+    margin-top: 20px;
+    font-weight: 600;
+    color: #003049;
+}
+
+/* RSVP Section Styling */
+.rsvp-section {
+    padding: 60px 20px;
+    background-color: #f0f7ff; 
+    text-align: center;
+}
+
+.rsvp-section h2 {
+    color: #007bff;
+    font-family: 'Merriweather', serif;
+}
+
+#rsvpForm {
+    max-width: 500px;
+    margin: 30px auto 0;
+    text-align: left;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    background-color: #28a745; /* Hijau untuk tombol konfirmasi */
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #1e7e34;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #003049;
+    color: #ccc;
+    font-size: 0.8em;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+    .profile-section {
+        margin-top: -30px; 
+    }
+    .profile-card {
+        max-width: 90%; /* Memastikan lebar tetap bagus di HP */
+    }
+    .detail-grid {
+        flex-direction: column;
+    }
+    .detail-box {
+        width: 100%;
+    }
+}
